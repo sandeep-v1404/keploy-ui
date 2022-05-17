@@ -23,15 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint \"**/*.{ts,tsx}\" --fix"
   },
   "license": "0BSD",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -50,5 +45,16 @@
   },
   "bugs": {
     "url": "https://github.com/keploy/ui/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.24.0",
+    "@typescript-eslint/parser": "^5.24.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0"
   }
 }
